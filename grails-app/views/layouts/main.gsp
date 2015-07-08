@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scotchApp">
 
 <head>
 
@@ -35,9 +35,57 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- jQuery -->
+    <asset:javascript src="jquery.min.js"/>
+
+    <!-- Bootstrap Core JavaScript -->
+    <asset:javascript src="bootstrap.min.js"/>
+    
+    <!-- AngularJS -->
+    <asset:javascript src="angular.js"/>
+    <asset:javascript src="angular-route.js"/>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <asset:javascript src="metisMenu.min.js"/>
+
+    <!-- Morris Charts JavaScript -->
+    <asset:javascript src="raphael-min.js"/>
+    <asset:javascript src="morris.min.js"/>
+    <asset:javascript src="morris-data.js"/>
+
+    <!-- Custom Theme JavaScript -->
+    <asset:javascript src="sb-admin-2.js"/>
+    
+    <!-- Route Test Script -->
+    <asset:javascript src="script.js"/>
 
 </head>
+<body ng-controller="mainController">
+	<!-- HEADER AND NAVBAR -->
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Angular Routing Example 5</a>
+				</div>
 
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+					<li><a href="#contact"><i class="fa fa-comment"></i>
+							Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- MAIN CONTENT AND INJECTED VIEWS -->
+	<div id="main">
+		<!-- angular templating -->
+		<!-- this is where content will be injected -->
+		<div ng-view></div>
+	</div>
+</body>
 <body>
 
     <div id="wrapper">
@@ -919,23 +967,5 @@
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="../bower_components/raphael/raphael-min.js"></script>
-    <script src="../bower_components/morrisjs/morris.min.js"></script>
-    <script src="../js/morris-data.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
-
 </body>
-
 </html>
