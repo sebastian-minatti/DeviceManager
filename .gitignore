@@ -12,3 +12,6 @@
 .settings/
 target-eclipse/
 target/
+
+#AngularJS class path
+.tern-project
