@@ -230,7 +230,7 @@
                             <a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Inventory<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Inventory</span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#devices">All</a>
@@ -248,16 +248,16 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#borrow"><i class="fa fa-table fa-fw"></i> Borrow a device</a>
+                            <a href="#borrow"><i class="fa fa-sign-out fa-fw"></i> Borrow a device</a>
                         </li>
                         <li>
-                            <a href="#external"><i class="fa fa-edit fa-fw"></i> Ask for a device</a>
+                            <a href="#external"><i class="fa fa-sign-in fa-fw"></i> Ask for a device</a>
                         </li>
                         <li>
-                            <a href="#monitoring"><i class="fa fa-sitemap fa-fw"></i> Monitoring</a>
+                            <a href="#monitoring"><i class="fa fa-heartbeat fa-fw"></i> Monitoring</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Email<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-envelope-o fa-fw"></i> Email</span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#reminders">See all reminders</a>
@@ -269,7 +269,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#history"><i class="fa fa-dashboard fa-fw"></i> History</a>
+                            <a href="#history"><i class="fa fa-history fa-fw"></i> History</a>
                         </li>
                     </ul>
                 </div>
