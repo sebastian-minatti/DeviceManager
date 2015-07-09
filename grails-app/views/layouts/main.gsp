@@ -29,6 +29,12 @@
 
     <!-- Custom Fonts -->
     <asset:stylesheet src="font-awesome.min.css"/>
+    
+    <!-- DataTables CSS -->
+    <asset:stylesheet src="dataTables.bootstrap.css"/>
+    <asset:stylesheet src="jquery.dataTables.min.css"/>
+    <asset:stylesheet src="dataTables.responsive.css"/>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +65,21 @@
     <asset:javascript src="sb-admin-2.js"/>
     
     <!-- Route Test Script -->
-<asset:javascript src="routingScript.js" />
+	<asset:javascript src="routingScript.js" />
+	
+	<!-- DataTables JavaScript -->
+	<asset:javascript src="jquery.dataTables.min.js" />
+	<asset:javascript src="dataTables.bootstrap.min.js" />
+	<asset:javascript src="jquery.dataTables.min.css" />
+	<asset:javascript src="dataTables.responsive.js" />
+	
+	<script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
 
 </head>
 <body>
@@ -283,7 +303,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    	<div ng-view/>
+                    	<!--  --><div ng-view/>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
