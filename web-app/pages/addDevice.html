@@ -1,61 +1,57 @@
-<div class="row">
-	<div class="col-lg-4">
-		<div class="panel panel-default">
-			<div class="panel-heading">Add a device</div>
-			<!-- /.panel-heading -->
-			<div class="panel-body">
-				<form class="form-horizontal">
-					<div class="form-group">
-						<select class="form-control" id="sel1" placeholder="Type">
-							<option value="" selected disabled>Type</option>
-							<option>Notebook</option>
-							<option>Smartphone</option>
-							<option>Table</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputBrand"
-							placeholder="Brand/Manufacturer">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputMac"
-							placeholder="MAC address">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputModel"
-							placeholder="Model">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputOSType"
-							placeholder="OS Type">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputOSModel"
-							placeholder="OS Model">
-					</div>
-					<div class="form-group">
-						<textarea class="form-control" rows="5" id="inputComments"
-							placeholder="Comments"></textarea>
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputCustomName"
-							placeholder="Custom Name">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="inputOwner"
-							placeholder="Owner">
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Save</button>
-						<button type="submit" class="btn btn-primary">Save and
-							Add another</button>
-					</div>
-				</form>
-			</div>
-			<!-- /.panel-body -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-4">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<select class="form-control" id="sel1" placeholder="Type">
+						<option value="" selected disabled>Type</option>
+						<option>Notebook</option>
+						<option>Smartphone</option>
+						<option>Tablet</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputBrand"
+						placeholder="Brand/Manufacturer">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputMac"
+						placeholder="MAC address">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputModel"
+						placeholder="Model">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOSType"
+						placeholder="OS Type">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOSModel"
+						placeholder="OS Model">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="5" id="inputComments"
+						placeholder="Comments"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputCustomName"
+						placeholder="Custom Name">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOwner"
+						placeholder="Owner">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Save</button>
+					<button type="submit" class="btn btn-primary">Save and add
+						another</button>
+					<a class="btn btn-danger" href="#devices" role="button">Cancel</a>
+				</div>
+			</form>
 		</div>
-		<!-- /.panel -->
+		<!-- /.col-lg-4 -->
 	</div>
-	<!-- /.col-lg-12 -->
+	<!-- /.row -->
 </div>
-<!-- /.row -->
+<!-- /.container-fluid -->
