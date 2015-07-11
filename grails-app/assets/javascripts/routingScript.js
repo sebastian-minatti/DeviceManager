@@ -54,36 +54,24 @@ glabApp.config(function($routeProvider) {
 glabApp.controller('dashboardController', function($scope) {
 	$scope.message = 'Dashboard UI';
 	$scope.data = [ {
-		y : '21',
-		a : 0,
-		b : 0
-	}, {
-		y : '22',
+		y : '> 4 weeks',
 		a : 1,
 		b : 0
 	}, {
-		y : '23',
-		a : 2,
-		b : 0
-	}, {
-		y : '24',
-		a : 0,
-		b : 1
-	}, {
-		y : '25',
+		y : '< 4 Weeks',
 		a : 1,
+		b : 3
+	}, {
+		y : '< 3 Weeks',
+		a : 3,
 		b : 0
 	}, {
-		y : '26',
+		y : '< 2 Weeks',
 		a : 0,
 		b : 0
 	}, {
-		y : '27',
-		a : 100,
-		b : 90
-	}, {
-		y : '28',
-		a : 2,
+		y : '< 1 Weeks',
+		a : 4,
 		b : 0
 	} ];
 });

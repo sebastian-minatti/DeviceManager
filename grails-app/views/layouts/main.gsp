@@ -32,8 +32,6 @@
 
 <!-- DataTables CSS -->
 <asset:stylesheet src="dataTables.bootstrap.css" />
-<asset:stylesheet src="jquery.dataTables.min.css" />
-<asset:stylesheet src="dataTables.responsive.css" />
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -216,6 +214,10 @@
 	<!-- Morris Charts JavaScript -->
 	<asset:javascript src="raphael-min.js" />
 	<asset:javascript src="morris.min.js" />
+	
+	<!-- Flot Chats JavaScript -->
+	<asset:javascript src="jquery.flot.js" />
+	<asset:javascript src="jquery.flot.pie.min.js" />
 
 	<!-- Custom Theme JavaScript -->
 	<asset:javascript src="sb-admin-2.js" />
@@ -225,8 +227,7 @@
 
 	<!-- DataTables JavaScript -->
 	<asset:javascript src="jquery.dataTables.min.js" />
-	<asset:javascript src="dataTables.bootstrap.min.js" />
-	<asset:javascript src="jquery.dataTables.min.css" />
-	<asset:javascript src="dataTables.responsive.js" />
+	<asset:javascript src="dataTables.bootstrap.js" />
+
 </body>
 </html>
