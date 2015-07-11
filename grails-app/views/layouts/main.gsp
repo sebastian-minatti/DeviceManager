@@ -32,8 +32,6 @@
 
 <!-- DataTables CSS -->
 <asset:stylesheet src="dataTables.bootstrap.css" />
-<asset:stylesheet src="jquery.dataTables.min.css" />
-<asset:stylesheet src="dataTables.responsive.css" />
 
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -225,8 +223,7 @@
 
 	<!-- DataTables JavaScript -->
 	<asset:javascript src="jquery.dataTables.min.js" />
-	<asset:javascript src="dataTables.bootstrap.min.js" />
-	<asset:javascript src="jquery.dataTables.min.css" />
-	<asset:javascript src="dataTables.responsive.js" />
+	<asset:javascript src="dataTables.bootstrap.js" />
+
 </body>
 </html>
