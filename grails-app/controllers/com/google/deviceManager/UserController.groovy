@@ -2,5 +2,7 @@ package com.google.deviceManager
 
 class UserController {
 
-    def index() { }
+    def index() { 
+		[users : User.list()]
+	}
 }

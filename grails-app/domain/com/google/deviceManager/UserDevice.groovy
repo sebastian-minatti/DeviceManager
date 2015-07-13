@@ -1,19 +1,21 @@
 package com.google.deviceManager
 
+import com.google.deviceManager.util.State
 import java.util.Date;
 
 class UserDevice implements Serializable {
-	static hasMany = [user:User];
-	Device device;
-	int quantityOfDaysBookedDevice;
-	Date dateCreated;
-	Date lastUpdated;
+	User user
+	Device device
+	State state
+	int quantityOfDaysBookedDevice
+	Date dateCreated
+	Date lastUpdated
 
     static constraints = {
     }
 	
 	static mapping = {
 		version false;
-		//id composite: ['user', 'device']
+		id composite: ['device', 'state']
 	}
 }

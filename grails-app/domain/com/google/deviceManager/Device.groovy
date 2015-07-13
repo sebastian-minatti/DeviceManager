@@ -1,27 +1,24 @@
 package com.google.deviceManager
 
-import java.util.Date;
+import com.google.deviceManager.util.State
+import java.util.Date
 
 class Device {
-	String macAddress;
-	String manufacturer;
-	String model;
-	String operatingSystem;
-	State state;
-	User user
-	String version;
-	Date dateCreated;
-	Date lastUpdated;
+	static hasMany = [userDevices:UserDevice]
+	String macAddress
+	String manufacturer
+	String model
+	String operatingSystem
+	String version
+	State state = State.ENABLE
+	Date dateCreated
+	Date lastUpdated
 
-	static constraints = {}
+	static constraints = {
+	}
 
 	static mapping = {
-		version false;
+		version false
 		id generator:'assigned', name:'macAddress'
 	}
-}
-
-public enum State{
-	ENABLE,
-	DISABLE,
 }

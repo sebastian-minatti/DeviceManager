@@ -194,6 +194,11 @@
 		<div id="page-wrapper" ng-controller="dashboardController">
 			<div ng-view />
 		</div>
+		
+		<g:findAll in="${users}" expr="true">
+    		<p>${it.lastName}, ${it.firstName}</p>
+		</g:findAll>		
+		
 		<!-- /#page-wrapper -->
 	</div>
 	<!-- /#wrapper -->
