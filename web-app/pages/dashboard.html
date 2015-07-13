@@ -1,8 +1,28 @@
 <!-- dashboard.html -->
 <div class="container-fluid">
 	<div class="row">
+		<div class="col-lg-12">
+			<div class="page-header">
+				<h3 class="pull-left">Dashboard</h3>
+				<div class="pull-right">
+					<div class="btn-group">
+						<button class="btn btn-primary">More</button>
+						<button class="btn btn-primary dropdown-toggle"
+							data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another Action</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- /.col-lg-12 -->
 	</div>
-	<!-- /.row -->
+	<!-- /.row-header -->
 	<div class="row">
 		<div class="col-lg-3 col-md-6">
 			<div class="panel panel-green">
@@ -288,7 +308,7 @@
 			xkey : 'y',
 			ykeys : [ 'a', 'b' ],
 			labels : [ 'Borrowed', 'To return' ],
-			barColors : [ '#f0ad4e', '#337ab7'],
+			barColors : [ '#f0ad4e', '#337ab7' ],
 			hideHover : 'auto',
 			resize : true
 		});

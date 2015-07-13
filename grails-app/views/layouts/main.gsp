@@ -43,9 +43,7 @@
 
 </head>
 <body>
-
 	<div id="wrapper">
-
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-static-top" role="navigation"
 			style="margin-bottom: 0">
@@ -165,7 +163,6 @@
 				<!-- /.dropdown -->
 			</ul>
 			<!-- /.navbar-top-links -->
-
 			<div class="navbar-default sidebar" role="navigation">
 				<div class="sidebar-nav navbar-collapse">
 					<ul class="nav" id="side-menu">
@@ -214,7 +211,7 @@
 	<!-- Morris Charts JavaScript -->
 	<asset:javascript src="raphael-min.js" />
 	<asset:javascript src="morris.min.js" />
-	
+
 	<!-- Flot Chats JavaScript -->
 	<asset:javascript src="jquery.flot.js" />
 	<asset:javascript src="jquery.flot.pie.min.js" />

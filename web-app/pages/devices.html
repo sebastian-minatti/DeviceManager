@@ -1,11 +1,28 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12">
-			<p class="navbar-btn">
-				<a href="#addDevice" class="btn btn-primary">Add</a>
-			</p>
+			<div class="page-header">
+				<h3 class="pull-left">Devices</h3>
+				<div class="pull-right">
+					<a class="btn btn-primary" href="#addDevice">Add</a>
+					<div class="btn-group">
+						<button class="btn btn-primary">More</button>
+						<button class="btn btn-primary dropdown-toggle"
+							data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="#">Go to Buganizer</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
 		</div>
+		<!-- /.col-lg-12 -->
 	</div>
+	<!-- /.row-header -->
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="dataTable_wrapper">
@@ -18,99 +35,31 @@
 							<th>Model</th>
 							<th>OS Type</th>
 							<th>OS Version</th>
+							<th>Edit</th>
+							<th>Delete</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="odd gradeX">
-							<td>Smartphone</td>
-							<td>Samsung</td>
-							<td>Galaxy S6</td>
-							<td>Android</td>
-							<td class="center">5.0</td>
-						</tr>
-						<tr class="even gradeC">
-							<td>Smartphone</td>
-							<td>Samsung</td>
-							<td>Galaxy S5</td>
-							<td>Android</td>
-							<td class="center">5.0</td>
-						</tr>
-						<tr class="even gradeC">
-							<td>Smartphone</td>
-							<td>Samsung</td>
-							<td>Galaxy S5</td>
-							<td>Android</td>
-							<td class="center">4.4.4</td>
-						</tr>
-						<tr class="even gradeC">
-							<td>Smartphone</td>
-							<td>Samsung</td>
-							<td>Galaxy S4</td>
-							<td>Android</td>
-							<td class="center">4.4</td>
-						</tr>
-						<tr class="even gradeC">
-							<td>Smartphone</td>
-							<td>Samsung</td>
-							<td>Galaxy S3</td>
-							<td>Android</td>
-							<td class="center">4.1</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 6</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 6 Plus</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 5</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 5S</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 5S</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 5S</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 5S</td>
-							<td>iOS</td>
-							<td class="center">8</td>
-						</tr>
-						<tr class="odd gradeA">
-							<td>Smartphone</td>
-							<td>Apple</td>
-							<td>iPhone 4</td>
-							<td>iOS</td>
-							<td class="center">7</td>
+						<tr ng-repeat="device in devices">
+							<td>{{device.type}}</td>
+							<td>{{device.brand}}</td>
+							<td>{{device.model}}</td>
+							<td>{{device.ostype}}</td>
+							<td>{{device.osversion}}</td>
+							<td><p data-placement="top" data-toggle="tooltip"
+									title="Edit">
+									<button class="btn btn-primary btn-xs" data-title="Edit"
+										data-toggle="modal" data-target="#modalUpdateDevice">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</button>
+								</p></td>
+							<td><p data-placement="top" data-toggle="tooltip"
+									title="Delete">
+									<button class="btn btn-danger btn-xs" data-title="Delete"
+										data-toggle="modal" data-target="#modalDeleteDevice">
+										<span class="glyphicon glyphicon-trash"></span>
+									</button>
+								</p></td>
 						</tr>
 					</tbody>
 				</table>
@@ -122,6 +71,89 @@
 	<!-- /.row -->
 </div>
 <!-- /.container-fluid -->
+
+<!-- Modal update device -->
+<div id="modalUpdateDevice" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Update Device</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<select class="form-control" id="sel1" placeholder="Type">
+						<option value="" selected disabled>Type</option>
+						<option>Notebook</option>
+						<option>Smartphone</option>
+						<option>Tablet</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputBrand"
+						placeholder="Brand/Manufacturer">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputMac"
+						placeholder="MAC address">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputModel"
+						placeholder="Model">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOSType"
+						placeholder="OS Type">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOSModel"
+						placeholder="OS Model">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="5" id="inputComments"
+						placeholder="Comments"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputCustomName"
+						placeholder="Custom Name">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOwner"
+						placeholder="Owner">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal delete device -->
+<div id="modalDeleteDevice" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Delete Device</h4>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-danger">
+					<p>Are you sure you want to delete the device?</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal"
+					ng-click="deleteDevice($index)">Yes</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#dataTables-devices').dataTable();
