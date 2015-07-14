@@ -35,7 +35,9 @@
 							<th>Model</th>
 							<th>OS Type</th>
 							<th>OS Version</th>
+							<th>View</th>
 							<th>Edit</th>
+							<th>Borrow</th>
 							<th>Delete</th>
 						</tr>
 					</thead>
@@ -47,10 +49,24 @@
 							<td>{{device.ostype}}</td>
 							<td>{{device.osversion}}</td>
 							<td><p data-placement="top" data-toggle="tooltip"
+									title="View">
+									<button class="btn btn-primary btn-xs" data-title="View"
+										data-toggle="modal" data-target="#modalViewDevice">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</p></td>
+							<td><p data-placement="top" data-toggle="tooltip"
 									title="Edit">
-									<button class="btn btn-primary btn-xs" data-title="Edit"
+									<button class="btn btn-warning btn-xs" data-title="Edit"
 										data-toggle="modal" data-target="#modalUpdateDevice">
 										<span class="glyphicon glyphicon-pencil"></span>
+									</button>
+								</p></td>
+							<td><p data-placement="top" data-toggle="tooltip"
+									title="Borrow">
+									<button class="btn btn-success btn-xs" data-title="Borrow"
+										data-toggle="modal" data-target="#modalBorrowDevice">
+										<span class="glyphicon glyphicon-log-out"></span>
 									</button>
 								</p></td>
 							<td><p data-placement="top" data-toggle="tooltip"
