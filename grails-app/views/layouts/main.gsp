@@ -211,6 +211,10 @@
 	<!-- Morris Charts JavaScript -->
 	<asset:javascript src="raphael-min.js" />
 	<asset:javascript src="morris.min.js" />
+	
+	<!-- Flot Chats JavaScript -->
+	<asset:javascript src="jquery.flot.js" />
+	<asset:javascript src="jquery.flot.pie.min.js" />
 
 	<!-- Flot Chats JavaScript -->
 	<asset:javascript src="jquery.flot.js" />
