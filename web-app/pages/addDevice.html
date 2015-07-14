@@ -22,9 +22,10 @@
 		<!-- /.col-lg-12 -->
 	</div>
 	<!-- /.row-header -->
-	<div class="row">
-		<div class="col-lg-4">
-			<form class="form-horizontal">
+	<form class="form-horizontal">
+		<div class="row">
+			<div class="col-lg-2">
+
 				<div class="form-group">
 					<select class="form-control" id="sel1" placeholder="Type">
 						<option value="" selected disabled>Type</option>
@@ -34,24 +35,36 @@
 					</select>
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="inputBrand"
-						placeholder="Brand/Manufacturer">
-				</div>
-				<div class="form-group">
 					<input type="text" class="form-control" id="inputMac"
 						placeholder="MAC address">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOSType"
+						placeholder="OS Type">
+				</div>
+			</div>
+			<!-- /.col-lg-2 -->
+			<div class="col-lg-2">
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputBrand"
+						placeholder="Brand/Manufacturer">
 				</div>
 				<div class="form-group">
 					<input type="text" class="form-control" id="inputModel"
 						placeholder="Model">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="inputOSType"
-						placeholder="OS Type">
-				</div>
-				<div class="form-group">
 					<input type="text" class="form-control" id="inputOSModel"
 						placeholder="OS Model">
+				</div>
+			</div>
+		</div>
+		<!-- /.row -->
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputOwner"
+						placeholder="Owner">
 				</div>
 				<div class="form-group">
 					<textarea class="form-control" rows="5" id="inputComments"
@@ -61,20 +74,19 @@
 					<input type="text" class="form-control" id="inputCustomName"
 						placeholder="Custom Name">
 				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOwner"
-						placeholder="Owner">
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Save</button>
 					<button type="submit" class="btn btn-primary">Save and add
 						another</button>
 					<a class="btn btn-danger" href="#devices" role="button">Cancel</a>
 				</div>
-			</form>
+			</div>
 		</div>
-		<!-- /.col-lg-4 -->
-	</div>
-	<!-- /.row -->
+	</form>
+
 </div>
 <!-- /.container-fluid -->
