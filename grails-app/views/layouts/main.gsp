@@ -229,6 +229,8 @@
 	<!-- DataTables JavaScript -->
 	<asset:javascript src="jquery.dataTables.min.js" />
 	<asset:javascript src="dataTables.bootstrap.js" />
+	
+	<asset:javascript src="angular-datatables.min.js" />
 
 </body>
 </html>

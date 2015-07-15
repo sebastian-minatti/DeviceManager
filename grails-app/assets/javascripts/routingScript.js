@@ -1,3 +1,4 @@
+angular.module('myModule', ['datatables']);
 var glabApp = angular.module('glabApp', [ 'ngRoute' ]);
 
 // configure our routes
