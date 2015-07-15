@@ -22,71 +22,173 @@
 		<!-- /.col-lg-12 -->
 	</div>
 	<!-- /.row-header -->
-	<form class="form-horizontal">
-		<div class="row">
-			<div class="col-lg-2">
+	<div class="row">
+		<div class="col-sm-3">
+			<!--left col-->
 
-				<div class="form-group">
-					<select class="form-control" id="sel1" placeholder="Type">
-						<option value="" selected disabled>Type</option>
-						<option>Notebook</option>
-						<option>Smartphone</option>
-						<option>Tablet</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputMac"
-						placeholder="MAC address">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOSType"
-						placeholder="OS Type">
-				</div>
-			</div>
-			<!-- /.col-lg-2 -->
-			<div class="col-lg-2">
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputBrand"
-						placeholder="Brand/Manufacturer">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputModel"
-						placeholder="Model">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOSModel"
-						placeholder="OS Model">
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOwner"
-						placeholder="Owner">
-				</div>
-				<div class="form-group">
-					<textarea class="form-control" rows="5" id="inputComments"
-						placeholder="Comments"></textarea>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputCustomName"
-						placeholder="Custom Name">
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">Save</button>
-					<button type="submit" class="btn btn-primary">Save and add
-						another</button>
-					<a class="btn btn-danger" href="#devices" role="button">Cancel</a>
-				</div>
-			</div>
-		</div>
-	</form>
+			<ul class="list-group">
+				<li class="list-group-item text-muted">Info</li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>ID</strong></span>
+					52088</li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>Created</strong></span>
+					2/13/2014</li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>Last
+							seen</strong></span> Yesterday</li>
+			</ul>
 
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Buganizer <i class="fa fa-link fa-1x"></i>
+				</div>
+				<div class="panel-body">
+					<a href="buganizer.com">Open bugs affecting this device (25)</a>
+				</div>
+			</div>
+
+			<ul class="list-group">
+				<li class="list-group-item text-muted">Activity <i
+					class="fa fa-dashboard fa-1x"></i></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>Times
+							Borrowed</strong></span> 25</li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>Time
+							Online</strong></span> 364 days</li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong>Age</strong></span>
+					1 year 150 days</li>
+			</ul>
+		</div>
+		<!--/col-3-->
+		<div class="col-sm-9">
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="active"><a showtab="" href="#deviceProperties"
+					data-toggle="tab">Device</a></li>
+				<li><a showtab="" href="#historyDevice" data-toggle="tab">History</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="deviceProperties">
+					<form class="form" action="##" method="post" id="registrationForm">
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="first_name"><h4>Type</h4></label> <select
+									class="form-control" id="sel1" placeholder="Type">
+									<option value="" selected disabled>---</option>
+									<option>Notebook</option>
+									<option>Smartphone</option>
+									<option>Tablet</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="last_name"><h4>State</h4></label> <input type="text"
+									class="form-control" name="last_name" id="last_name"
+									placeholder="Available">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="mobile"><h4>Manufacturer</h4></label> <input
+									type="text" class="form-control" name="mobile" id="mobile"
+									placeholder="Samsung">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="email"><h4>Model</h4></label> <input type="text"
+									class="form-control" name="email" id="email"
+									placeholder="Galaxy S6">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="email"><h4>OS Type</h4></label> <input type="text"
+									class="form-control" id="location" placeholder="Android">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="phone"><h4>OS Version</h4></label> <input
+									type="text" class="form-control" name="phone" id="phone"
+									placeholder="5.0">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="email"><h4>Owner</h4></label> <input type="text"
+									class="form-control" id="location" placeholder="@ownersldap">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="phone"><h4>MAC</h4></label> <input type="text"
+									class="form-control" name="phone" id="phone"
+									placeholder="A1:B2:C3:D4:E5:F6">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-6">
+								<label for="email"><h4>Custom Name</h4></label> <input
+									type="text" class="form-control" id="location"
+									placeholder="Samsung Galaxy S6 - Android 5.0">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12">
+								<label for="phone"><h4>Notes</h4></label>
+								<textarea class="form-control" rows="4" id="inputComments"
+									placeholder="Notes or comments about this device..."></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-12">
+								<h2></h2>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Save</button>
+									<button type="submit" class="btn btn-primary">Save and
+										add another</button>
+									<a class="btn btn-danger" href="#devices" role="button">Cancel</a>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<!-- /.tab-pane-deviceProperties -->
+				<div class="tab-pane" id="historyDevice">
+					<h2></h2>
+					<ul class="list-group">
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Here is your a link to the latest summary
+								report from the..</a> 2.13.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Hi Joe, There has been a request on your
+								account since that was..</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Nullam sapien massaortor. A lobortis vitae,
+								condimentum justo...</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Thllam sapien massaortor. A lobortis vitae,
+								condimentum justo...</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Wesm sapien massaortor. A lobortis vitae,
+								condimentum justo...</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">For therepien massaortor. A lobortis vitae,
+								condimentum justo...</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Also we, havesapien massaortor. A lobortis
+								vitae, condimentum justo...</a> 2.11.2014</li>
+						<li class="list-group-item text-right"><a href="#"
+							class="pull-left">Swedish chef is assaortor. A lobortis
+								vitae, condimentum justo...</a> 2.11.2014</li>
+					</ul>
+				</div>
+				<!--/.tab-pane-historyDevice -->
+			</div>
+			<!--/tab-pane-->
+		</div>
+		<!--/tab-content-->
+	</div>
+	<!--/row-->
 </div>
 <!-- /.container-fluid -->

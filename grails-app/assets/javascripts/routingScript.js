@@ -85,6 +85,7 @@ glabApp
 				});
 
 glabApp.controller('devicesController', function($scope) {
+	
 	$scope.message = 'List of all the devices with different filters.';
 	$scope.devices = [ {
 		type : 'Smartphone',
@@ -171,3 +172,5 @@ glabApp.controller('sendReminderController', function($scope) {
 glabApp.controller('addDeviceController', function($scope) {
 	$scope.message = 'Form to add a new Device';
 });
+
+var directives = angular.module('directives');
