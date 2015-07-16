@@ -173,4 +173,14 @@ glabApp.controller('addDeviceController', function($scope) {
 	$scope.message = 'Form to add a new Device';
 });
 
-var directives = angular.module('directives');
+glabApp.directive('showtab',
+	    function () {
+    return {
+        link: function (scope, element, attrs) {
+            element.click(function(e) {
+                e.preventDefault();
+                $(element).tab('show');
+            });
+        }
+    };
+});

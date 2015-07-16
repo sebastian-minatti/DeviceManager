@@ -174,11 +174,11 @@
 								Dashboard</a></li>
 						<li><a href="#devices"><i class="fa fa-mobile fa-fw"></i>
 								Devices</a></li>
-						<li><a href="#borrow"><i class="fa fa-sign-out fa-fw"></i>
+						<%--<li><a href="#borrow"><i class="fa fa-sign-out fa-fw"></i>
 								Borrow a device</a></li>
 						<li><a href="#external"><i class="fa fa-sign-in fa-fw"></i>
 								Ask for a device</a></li>
-						<li><a href="#monitoring"><i
+						--%><li><a href="#monitoring"><i
 								class="fa fa-heartbeat fa-fw"></i> Monitoring</a></li>
 						<li><a href="#reminders"><i
 								class="fa fa-envelope-o fa-fw"></i> Reminders</a>
