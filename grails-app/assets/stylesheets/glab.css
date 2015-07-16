@@ -5,3 +5,19 @@
   background: url(http://ssl.gstatic.com/gb/images/v1_89332204.png) 0 -1904px;
   display:block;
 }
+
+.google_apps {
+  height: 33px;
+  width: 30px;
+  background-size: 92px 2460px;
+  background: url(http://ssl.gstatic.com/gb/images/v1_89332204.png) -60px -1627px;
+  display:block;
+}
+
+.google_notifications {
+  height: 30px;
+  width: 30px;
+  background-size: 92px 2460px;
+  background: url(http://ssl.gstatic.com/gb/images/v1_89332204.png) -69px -104px;
+  display:block;
+}

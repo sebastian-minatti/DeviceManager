@@ -56,11 +56,8 @@
 										title="View">
 										<span class="glyphicon glyphicon-search"></span>
 									</button>
-									<button class="btn btn-warning btn-xs" data-title="Edit"
-										data-toggle="modal" data-target="#modalUpdateDevice"
-										title="Edit">
-										<span class="glyphicon glyphicon-pencil"></span>
-									</button>
+									<a class="btn btn-warning btn-xs" title="Edit" href="#addDevice"><span
+										class="glyphicon glyphicon-pencil"></span></a>
 									<button class="btn btn-danger btn-xs" data-title="Delete"
 										data-toggle="modal" data-target="#modalDeleteDevice"
 										title="Delete">
@@ -80,59 +77,38 @@
 <!-- /.container-fluid -->
 
 <!-- Modal update device -->
-<div id="modalUpdateDevice" class="modal fade" role="dialog">
+<div id="modalBorrowDevice" class="modal fade" role="dialog">
 	<div class="modal-dialog">
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Update Device</h4>
+				<h4 class="modal-title">Borrow Device</h4>
 			</div>
 			<div class="modal-body">
 				<div class="form-group">
-					<select class="form-control" id="sel1" placeholder="Type">
-						<option value="" selected disabled>Type</option>
-						<option>Notebook</option>
-						<option>Smartphone</option>
-						<option>Tablet</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputBrand"
-						placeholder="Brand/Manufacturer">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputMac"
-						placeholder="MAC address">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputModel"
-						placeholder="Model">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOSType"
-						placeholder="OS Type">
-				</div>
-				<div class="form-group">
 					<input type="text" class="form-control" id="inputOSModel"
-						placeholder="OS Model">
+						placeholder="Samsung Galaxy S6 - Android 5.0">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputFrom"
+						placeholder="Who is taking the device">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputTo"
+						placeholder="Who is lending it">
+				</div>
+				<div class="form-group">
+					<input type="date" class="form-control" id="inputReturnBy">
 				</div>
 				<div class="form-group">
 					<textarea class="form-control" rows="5" id="inputComments"
-						placeholder="Comments"></textarea>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputCustomName"
-						placeholder="Custom Name">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOwner"
-						placeholder="Owner">
+						placeholder="Notes or comments"></textarea>
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Borrow</button>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 			</div>
 		</div>
 	</div>

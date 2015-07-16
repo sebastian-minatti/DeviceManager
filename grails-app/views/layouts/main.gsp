@@ -166,6 +166,10 @@
 			<div class="navbar-default sidebar" role="navigation">
 				<div class="sidebar-nav navbar-collapse">
 					<ul class="nav" id="side-menu">
+						<li>
+							<div style="padding : 10px">
+								<a href="#borrow" class="btn btn-primary" style="width : 150px">Borrow</a></div>
+							</li>
 						<li><a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i>
 								Dashboard</a></li>
 						<li><a href="#devices"><i class="fa fa-mobile fa-fw"></i>
@@ -211,7 +215,7 @@
 	<!-- Morris Charts JavaScript -->
 	<asset:javascript src="raphael-min.js" />
 	<asset:javascript src="morris.min.js" />
-	
+
 	<!-- Flot Chats JavaScript -->
 	<asset:javascript src="jquery.flot.js" />
 	<asset:javascript src="jquery.flot.pie.min.js" />
@@ -229,8 +233,11 @@
 	<!-- DataTables JavaScript -->
 	<asset:javascript src="jquery.dataTables.min.js" />
 	<asset:javascript src="dataTables.bootstrap.js" />
-	
+
 	<asset:javascript src="angular-datatables.min.js" />
+	
+	<!-- Directives	 -->
+	<asset:javascript src="tabDirective.js" />
 
 </body>
 </html>
