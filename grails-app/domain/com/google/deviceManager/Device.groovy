@@ -11,6 +11,7 @@ class Device {
 	String operatingSystem
 	String version
 	State state = State.ENABLE
+	DeviceType deviceType = DeviceType.SMARTPHONE
 	Date dateCreated
 	Date lastUpdated
 
@@ -20,5 +21,12 @@ class Device {
 	static mapping = {
 		version false
 		id generator:'assigned', name:'macAddress'
+	}
+	
+	public enum DeviceType{
+		SMARTPHONE,
+		TABLET,
+		PC,
+		SMARTWATCH
 	}
 }
