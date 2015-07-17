@@ -9,7 +9,7 @@ class Device {
 	String manufacturer
 	String model
 	String operatingSystem
-	String version
+	String osVersion
 	State state = State.ENABLE
 	DeviceType deviceType = DeviceType.SMARTPHONE
 	Date dateCreated

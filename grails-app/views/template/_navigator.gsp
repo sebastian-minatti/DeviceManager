@@ -121,7 +121,7 @@
 				<ul class="nav" id="side-menu">
 					<li><a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i>
 							Dashboard</a></li>
-					<li><a href="#index"><i
+					<li><a href="${createLink(controller: 'device')}"><i
 							class="fa fa-mobile fa-fw"></i> Devices</a></li>
 					<li><a href="#borrow"><i class="fa fa-sign-out fa-fw"></i>
 							Borrow a device</a></li>

@@ -9,7 +9,7 @@
 	
 			<!-- Page Content -->
 			<div id="page-wrapper" ng-controller="dashboardController">
-				<div ng-view />
+				<g:render template="/template/dashboard" />
 			</div>	
 		</div>
 		<g:render template="/template/body" />	
