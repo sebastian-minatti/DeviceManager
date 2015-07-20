@@ -2,9 +2,15 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="page-header">
-				<h3 class="pull-left">Devices</h3>
-				<div class="pull-right">
+				<h3></h3>
+				<div class="pull-left">
+					<button class="btn btn-primary">
+						<img class="back_refresh" alt="GLab"
+							src="http://www.w3schools.com/css/img_trans.gif">
+					</button>
 					<a class="btn btn-primary" href="#addDevice">Add</a>
+				</div>
+				<div class="pull-right">
 					<div class="btn-group">
 						<button class="btn btn-primary">More</button>
 						<button class="btn btn-primary dropdown-toggle"
@@ -56,8 +62,8 @@
 										title="View">
 										<span class="glyphicon glyphicon-search"></span>
 									</button>
-									<a class="btn btn-warning btn-xs" title="Edit" href="#addDevice"><span
-										class="glyphicon glyphicon-pencil"></span></a>
+									<a class="btn btn-warning btn-xs" title="Edit"
+										href="#addDevice"><span class="glyphicon glyphicon-pencil"></span></a>
 									<button class="btn btn-danger btn-xs" data-title="Delete"
 										data-toggle="modal" data-target="#modalDeleteDevice"
 										title="Delete">
@@ -86,28 +92,78 @@
 				<h4 class="modal-title">Borrow Device</h4>
 			</div>
 			<div class="modal-body">
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputOSModel"
-						placeholder="Samsung Galaxy S6 - Android 5.0">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label for="validate-text">Device</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="validate-text"
+									id="validate-text" placeholder="What is being borrowed..."
+									required> <span class="input-group-addon danger"><span
+									class="glyphicon glyphicon-remove"></span></span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputFrom"
-						placeholder="Who is taking the device">
+				<!-- /.1st row -->
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="validate-text">From</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="validate-text"
+									id="validate-text" placeholder="Who is lending it...">
+								<span class="input-group-addon info"><span
+									class="glyphicon glyphicon-info-sign"></span></span>
+							</div>
+						</div>
+					</div>
+					<!-- /.2nd row -->
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="validate-optional">To</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="validate-optional"
+									id="validate-optional" placeholder="Who is taking it..."
+									required> <span class="input-group-addon danger"><span
+									class="glyphicon glyphicon-remove"></span></span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" id="inputTo"
-						placeholder="Who is lending it">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="validate-text">Return by</label>
+							<div class="input-group">
+								<input type="date" class="form-control" name="validate-text"
+									id="validate-text"> <span
+									class="input-group-addon info"><span
+									class="glyphicon glyphicon-info-sign"></span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6"></div>
 				</div>
-				<div class="form-group">
-					<input type="date" class="form-control" id="inputReturnBy">
+				<!-- /.3rd row -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label for="validate-length">Notes</label>
+							<div class="input-group">
+								<textarea type="text" class="form-control"
+									name="validate-length" id="validate-length"
+									placeholder="Notes or comments"></textarea>
+								<span class="input-group-addon info"><span
+									class="glyphicon glyphicon-info-sign"></span></span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<textarea class="form-control" rows="5" id="inputComments"
-						placeholder="Notes or comments"></textarea>
-				</div>
+				<!-- /.4th row -->
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Borrow</button>
+				<button type="submit" class="btn btn-primary" data-dismiss="modal">Borrow</button>
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 			</div>
 		</div>

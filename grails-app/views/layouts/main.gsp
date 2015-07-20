@@ -61,6 +61,15 @@
 			</div>
 			<!-- /.navbar-header -->
 
+			<form class="navbar-form navbar-left" role="search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search for...">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</form>
+
 			<ul class="nav navbar-top-links navbar-right">
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown"> <i class="fa fa-envelope fa-fw"></i> <i
@@ -167,9 +176,10 @@
 				<div class="sidebar-nav navbar-collapse">
 					<ul class="nav" id="side-menu">
 						<li>
-							<div style="padding : 10px">
-								<a href="#borrow" class="btn btn-primary" style="width : 150px">Borrow</a></div>
-							</li>
+							<div style="padding: 15px 15px 9px 15px">
+								<a href="#borrow" class="btn btn-primary" style="width: 150px">Borrow</a>
+							</div>
+						</li>
 						<li><a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i>
 								Dashboard</a></li>
 						<li><a href="#devices"><i class="fa fa-mobile fa-fw"></i>
@@ -178,7 +188,8 @@
 								Borrow a device</a></li>
 						<li><a href="#external"><i class="fa fa-sign-in fa-fw"></i>
 								Ask for a device</a></li>
-						--%><li><a href="#monitoring"><i
+						--%>
+						<li><a href="#monitoring"><i
 								class="fa fa-heartbeat fa-fw"></i> Monitoring</a></li>
 						<li><a href="#reminders"><i
 								class="fa fa-envelope-o fa-fw"></i> Reminders</a>
@@ -235,7 +246,7 @@
 	<asset:javascript src="dataTables.bootstrap.js" />
 
 	<asset:javascript src="angular-datatables.min.js" />
-	
+
 	<!-- Directives	 -->
 	<asset:javascript src="tabDirective.js" />
 
