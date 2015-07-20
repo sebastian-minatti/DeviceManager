@@ -61,11 +61,11 @@
 			</div>
 			<!-- /.navbar-header -->
 
-			<form class="navbar-form navbar-left" role="search">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search for...">
+			<form class="navbar-form navbar-left" role="search" style="width:50%;">
+				<div class="input-group" style="width:100%;max-width: 710px;">
+					<input type="text" class="form-control" placeholder="Search for..." style="width:100%; max-width: 650px;">
 					<span class="input-group-btn">
-						<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+						<button class="btn btn-primary" type="button" style="width: 60px;"><i class="fa fa-search"></i></button>
 					</span>
 				</div>
 			</form>
