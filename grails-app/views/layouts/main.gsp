@@ -219,6 +219,7 @@
 	<!-- AngularJS -->
 	<asset:javascript src="angular.js" />
 	<asset:javascript src="angular-route.js" />
+	<asset:javascript src="angular-resource.js" />
 
 	<!-- Metis Menu Plugin JavaScript -->
 	<asset:javascript src="metisMenu.min.js" />

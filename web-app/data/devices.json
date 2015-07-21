@@ -1,0 +1,51 @@
+[ {
+		"type" : "Smartphone",
+		"brand" : "Samsung",
+		"mac" : "00:1C:B3:09:85:15",
+		"model" : "Galaxy S6",
+		"ostype" : "Android",
+		"osversion" : "5.0",
+		"comments" : "",
+		"customname" : "Samsung Galaxy S6 - Android 5.0",
+		"owner" : "@galileos"
+	}, {
+		"type" : "Smartphone",
+		"brand" : "Samsung",
+		"mac" : "00:1C:B3:09:85:15",
+		"model" : "Galaxy S5",
+		"ostype" : "Android",
+		"osversion" : "5.0",
+		"comments" : "",
+		"customname" : "Samsung Galaxy S5 - Android 5.0",
+		"owner" : "@galileos"
+	}, {
+		"type" : "Smartphone",
+		"brand" : "Samsung",
+		"mac" : "00:1C:B3:09:85:15",
+		"model" : "Galaxy S5",
+		"ostype" : "Android",
+		"osversion" : "5.0",
+		"comments" : "",
+		"customname" : "Samsung Galaxy S5 - Android 5.0",
+		"owner" : "@galileos"
+	}, {
+		"type" : "Smartphone",
+		"brand" : "Samsung",
+		"mac" : "00:1C:B3:09:85:15",
+		"model" : "Galaxy S4",
+		"ostype" : "Android",
+		"osversion" : "4.4",
+		"comments" : "",
+		"customname" : "Samsung Galaxy S4 - Android 4.4",
+		"owner" : "@galileos"
+	}, {
+		"type" : "Smartphone",
+		"brand" : "Samsung",
+		"mac" : "00:1C:B3:09:85:15",
+		"model" : "Galaxy S3",
+		"ostype" : "Android",
+		"osversion" : "4.1",
+		"comments" : "",
+		"customname" : "Samsung Galaxy S3 - Android 4.1",
+		"owner" : "@galileos"
+	} ]

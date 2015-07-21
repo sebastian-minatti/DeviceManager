@@ -1,5 +1,4 @@
-angular.module('myModule', ['datatables']);
-var glabApp = angular.module('glabApp', [ 'ngRoute' ]);
+var glabApp = angular.module('glabApp', [ 'ngRoute' , 'datatables', 'ngResource']);
 
 // configure our routes
 glabApp.config(function($routeProvider) {
@@ -83,6 +82,14 @@ glabApp
 				function($scope) {
 					$scope.message = 'Form to register a device that was lend to someone outside to the team.';
 				});
+glabApp.controller('AngularWayCtrl', AngularWayCtrl);
+
+function AngularWayCtrl($resource) {
+    var vm = this;
+    $resource('data/devices.json').query().$promise.then(function(devices) {
+        vm.devices = devices;
+    });
+}
 
 glabApp.controller('devicesController', function($scope) {
 	
